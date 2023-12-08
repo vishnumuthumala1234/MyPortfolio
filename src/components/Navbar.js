@@ -28,6 +28,17 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className='hidden md:flex'>
+      <li>
+          <Link
+            to='home'
+            smooth={true}
+            duration={500}
+            className={activeLink === 'home' ? 'text-white font-bold' : 'text-gray-300'}
+            onClick={() => handleLinkClick('MyPortfolio')}
+          >
+            My Web
+          </Link>
+        </li>
         <li>
           <Link
             to='home'
